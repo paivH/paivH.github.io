@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Corona.MainPage">
+
+
+    <ListView x:Name="CasesListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding cases}" TextColor="Black"></Label>
+                    <Label Text="{Binding deaths}" TextColor="Black"></Label>
+                    <Label Text="{Binding recovered}" TextColor="Black"></Label>
+                    <Label Text="{Binding updated}" TextColor="Black"></Label>
+                    <Label Text="{Binding active}" TextColor="Black"></Label>
+                    <Label Text="{Binding affectedCountries}" TextColor="Black"></Label>
+                </StackLayout>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+</ListView>
+</ContentPage>
